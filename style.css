@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@700&display=swap');
+
+
+
+:root{
+    --red-:hsl(0, 100%, 74%) ;
+    --blue-:hsl(248, 32%, 49%);
+    --green-:hsl(154, 59%, 51%);
+    --gray-:hsl(249, 10%, 26%) ;
+    --white-:hsl(246, 25%, 77%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family:'Poppins' sans-serif;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: var(--red-);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* decktop design */
+.main{
+    color:white;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* left-container */
+.left-container{
+    width: 40%;
+}
+.title{
+    
+    font-size: 50px;
+    font-weight: 900;
+}
+.discription{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+/* right-container */
+.right-container{
+    width: 40%;
+}
+.form-reg {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+input {
+    margin: 7px 0px 35px 0px;
+    padding: 12px;
+    border: 2px solid var(--white-);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+p.right-t-discription {
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0px;
+    background-color:var(--blue-);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+span.span {
+    font-weight: 900;
+    font-size: 19px;
+}
+.btn.btn-green {
+    background-color: var(--green-);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+}
+p.right-u-discription {
+    color: var(--white-);
+    text-align: center;
+    padding: 5px 15px;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+a.trems {
+    color: var(--red-);
+}
+
+@media (max-width: 745px) {
+    body{
+        background-image: url(images/bg-intro-mobile.png);
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    /* left-container */
+    .left-container{
+        margin: 20px;
+        width: 80%;
+    }
+    /* right-container */
+    .right-container{
+        margin: 20px;
+        width: 80%;
+    }
+    
+}
+
+
